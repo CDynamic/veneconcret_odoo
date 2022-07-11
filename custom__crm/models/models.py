@@ -1,14 +1,18 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields, api
 
 
-# class custom__crm(models.Model):
-#     _name = 'custom__crm.custom__crm'
-#     _description = 'custom__crm.custom__crm'
+class custom__crm(models.Model):
+    _name = 'custom__crm.datosNacionales'
+    _description = 'custom__crm.datosNacionales'
 
-#     name = fields.Char()
-#     value = fields.Integer()
+    name = fields.Char()
+    fisrt_name = fields.Char()
+    Document = fields.Integer()
+    cedula = fields.Integer()
+
+    
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #
