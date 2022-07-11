@@ -8,10 +8,10 @@ class datosNacionales(models.Model):
     _name = 'custom__crm.datosNacionales'
     _description = 'datosNacionales'
 
-    name = fields.Char()
-    fisrt_name = fields.Char()
-    Document = fields.Integer()
-    cedula = fields.Integer()
+    name = fields.Char(string='nombre')
+    fisrt_name = fields.Char(string='apellido')
+    Document = fields.Integer(string='cduala')
+    type = fields.Selection([('V', 'Venezolano'),('E','Extrangero'),('G','Gobierno')])
 
     
 #     value2 = fields.Float(compute="_value_pc", store=True)
