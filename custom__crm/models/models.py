@@ -3,9 +3,10 @@
 from odoo import models, fields, api
 
 
-class custom__crm(models.Model):
+class datosNacionales(models.Model):
+    # 
     _name = 'custom__crm.datosNacionales'
-    _description = 'custom__crm.datosNacionales'
+    _description = 'datosNacionales'
 
     name = fields.Char()
     fisrt_name = fields.Char()

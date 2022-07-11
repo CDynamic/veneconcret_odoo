@@ -3,15 +3,14 @@
     'name': "custom_CRM",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        descrpcion corta""",
 
     'description': """
-        Long description of module's purpose
+        description larga           
     """,
 
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
+    'author': "Conceptual Dynamic",
+    'website': "https://conceptualdynamic.com/",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
