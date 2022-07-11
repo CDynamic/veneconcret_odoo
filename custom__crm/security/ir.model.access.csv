@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_custom__crm_custom__crm,custom__crm.custom__crm,model_custom__crm_custom__crm,base.group_user,1,1,1,1
