@@ -1,2 +1,2 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_model_1_model_visit,model_1.visit,model_1.visit,1,1,1,1,1
+access_sicm_sicm,sicm.sicm,model_sicm_sicm,base.group_user,1,1,1,1
