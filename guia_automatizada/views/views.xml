@@ -3,15 +3,15 @@
 
     <record id="view_model_CM_Credentials_form" model="ir.ui.view">
       <field name="name">view.model.CM.Credentials.form</field>
-      <field name="model">sicm.credentials</field>
+      <field name="model">guia_automatizada.credentials</field>
       <field name="arch" type="xml">
         <form string="Credentials">
           <sheet>
             
             <group name="group_top">
               <group name="group_left">
-                <field name="username" />
-                <field name="password" />
+                <field name="code_sicm" />
+                <field name="code_segurity" />
               </group>
               <!-- <group name="group_right" string="crear data">
                 <button name="scrape" string="scrape" class="oe_highlight" type="object"/>
@@ -24,11 +24,11 @@
 
     <record id="view_model_CM_Credentials_tree" model="ir.ui.view">
       <field name="name">view.model.CM.Credentials.tree</field>
-      <field name="model">sicm.credentials</field>
+      <field name="model">guia_automatizada.credentials</field>
       <field name="arch" type="xml">
         <tree string="Credentials">
-          <field name="username" />
-          <field name="password" />
+          <field name="code_sicm" />
+          <field name="code_segurity" />
         </tree>
       </field>
     </record>
@@ -36,7 +36,7 @@
     <record id="view_model_CM_Credentials_visit_view" model="ir.actions.act_window">
       <field name="name">Credenciales</field>
       <field name="type">ir.actions.act_window</field>
-      <field name="res_model">sicm.credentials</field>
+      <field name="res_model">guia_automatizada.credentials</field>
       <field name="view_mode">tree,form,kanban</field>
       <field name="help" type="html">
         <p class="oe_view_nocontent_create">
@@ -47,6 +47,7 @@
       </p>
       </field>
     </record>
+    
 
     <!-- <menuitem id="menu_custom_crm_root" name="Custom CRM" sequence="10" />
 
@@ -54,9 +55,9 @@
 
     <menuitem id="menu_custom_crm_visit" name="Visitas" parent="menu_custom_crm_visit_categ" sequence="0" action="action_custom_crm_visit_view" /> -->
 
-    <menuitem id="menu_finance_sicm" name="Control Medicamento" sequence="2" parent="account.menu_finance" />
+    <menuitem id="menu_finance_guia_automatizada" name="Control Medicamento" sequence="2" parent="account.menu_finance" />
 
-    <menuitem id="menu_custom_crm_visit" name="Credenciales" parent="menu_finance_sicm" sequence="0" action="view_model_CM_Credentials_visit_view" />
+    <menuitem id="menu_custom_crm_visit" name="Credenciales" parent="menu_finance_guia_automatizada" sequence="0" action="view_model_CM_Credentials_visit_view" />
 
   </data>
 </odoo>

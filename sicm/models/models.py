@@ -1,18 +1,26 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
 
 
-# class sicm(models.Model):
-#     _name = 'sicm.sicm'
-#     _description = 'sicm.sicm'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
+from odoo import models, fields, api
+
+
+class modelCMCredentials(models.Model):
+    _name = 'sicm.credentials'
+
+    username = fields.Char(string='Nombre De Usuario')
+    password = fields.Char(string='contraseña')
+
+    
+
+class guíasMovilización(models.Model):
+    _name = 'sicm.guias'
+
+    guia = fields.Char(string= 'Numero de la Guia')
+    created = fields.Datetime(string= 'Fecha de creacion') 
+    updated = fields.Datetime(string= 'Fecha de Actualizacion') 
+
+    
+
+    

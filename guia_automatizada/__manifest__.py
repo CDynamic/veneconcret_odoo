@@ -20,15 +20,14 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','account', 'account_check_printing', 'account_edi', 'payment', 'sale'],
+    'depends': ['base','account'],
     
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/listadoGuias.xml',
-        'views/generateGuia.xml'
+        'views/generateGuia.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
